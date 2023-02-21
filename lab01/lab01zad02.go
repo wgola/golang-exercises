@@ -9,7 +9,8 @@ func main() {
 	_, err := fmt.Scanf("%d", &i)
 
 	if err != nil {
-		fmt.Println("error")
+		fmt.Println("Error - wrong age!")
+		return
 	}
 
 	fmt.Println("Your age [in years] on different planets:")
