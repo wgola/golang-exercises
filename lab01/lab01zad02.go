@@ -1,8 +1,8 @@
-package main
+package lab01
 
 import "fmt"
 
-func main() {
+func Zad02() {
 	fmt.Println("How old are you?")
 
 	var i int

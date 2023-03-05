@@ -1,11 +1,11 @@
-package main
+package lab01
 
 import (
 	"fmt"
 	"math/rand"
 )
 
-func main() {
+func Zad04() {
 	answer := rand.Intn(100) + 1
 
 	fmt.Println("Guess the number (1-100) or type 0 to exit: ")

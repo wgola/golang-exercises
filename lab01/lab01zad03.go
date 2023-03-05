@@ -1,11 +1,11 @@
-package main
+package lab01
 
 import (
 	"fmt"
 	"math"
 )
 
-func main() {
+func Zad03() {
 	fmt.Println("Enter parameters of quadratic polynomial separated with space (a b c): ")
 
 	var a, b, c float64
