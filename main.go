@@ -41,13 +41,15 @@ func lab01_exercises() {
 }
 
 func lab03_exercises() {
-	fmt.Println("Choose exercises from lab03 (1): ")
+	fmt.Println("Choose exercises from lab03 (1-2): ")
 	var ex int
 	fmt.Scanf("%d", &ex)
 
 	switch ex {
 	case 1:
 		lab03.Zad01()
+	case 2:
+		lab03.Zad02()
 	default:
 		fmt.Println("You have chosen wrong exercise!")
 	}
