@@ -1,35 +1,30 @@
 package lab03
 
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
 func Zad04() {
-	lengths := []rune{}
+	lengths := []int{}
 
-	for i := 1; i <= 100000; i++ {
-		_, length := LongestCycle(i, i)
-		letters := []rune(strconv.Itoa(length))
-		lengths = append(lengths, letters...)
+	for i := 1; i <= 100_000; i++ {
+		_, length := longestCycle(i, i)
+		lengths = append(lengths, length)
 	}
 
-	letters := make(map[string]int)
+	stats := make(map[int]int)
 
-	for _, letter := range lengths {
-		letters[string(letter)] += 1
+	for i := range lengths {
+		stats[lengths[i]] += 1
 	}
 
-	mostInstances, mostNumbers := 0, ""
-
-	for key, value := range letters {
-		if mostInstances < value {
-			mostInstances = value
-			mostNumbers = key
+	var biggestValue, foundKey int
+	for key, value := range stats {
+		if biggestValue < value {
+			biggestValue = value
+			foundKey = key
 		}
 
-		fmt.Printf("Number: %v, instances: %v\n", key, value)
+		fmt.Printf("Key: %v, value: %v\n", key, value)
 	}
 
-	fmt.Printf("Number with most occurances: %v (%v)\n", mostNumbers, mostInstances)
+	fmt.Printf("Biggest value: %v for key %v\n", biggestValue, foundKey)
 }

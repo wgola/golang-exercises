@@ -1,6 +1,6 @@
 package lab03
 
-func LongestCycle(start int, end int) (int, int) {
+func longestCycle(start int, end int) (int, int) {
 	var number, longest int
 
 	collatz := func(number int) int {

@@ -3,7 +3,7 @@ package lab03
 import "fmt"
 
 func Lab03() {
-	fmt.Println("Choose exercises from lab03 (1-3): ")
+	fmt.Println("Choose exercises from lab03 (1-4): ")
 	var ex int
 	fmt.Scanf("%d", &ex)
 

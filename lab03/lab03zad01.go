@@ -9,6 +9,6 @@ func Zad01() {
 		end   int
 	)
 	fmt.Scanf("%v %v", &start, &end)
-	number, length := LongestCycle(start, end)
+	number, length := longestCycle(start, end)
 	fmt.Printf("Number: %v, number of cycles: %v.\n", number, length)
 }

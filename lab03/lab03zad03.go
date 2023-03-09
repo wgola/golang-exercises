@@ -14,7 +14,7 @@ func Zad03() {
 	)
 
 	for i := 1; i <= 100000; i++ {
-		x, y := LongestCycle(i, i)
+		x, y := longestCycle(i, i)
 		numbers[i-1], lengths[i-1] = float64(x), float64(y)
 	}
 
