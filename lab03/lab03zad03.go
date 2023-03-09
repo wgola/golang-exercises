@@ -6,11 +6,11 @@ import (
 
 func Zad03() {
 	var (
-		numbers [100000]float64 = [100000]float64{}
-		lengths [100000]float64 = [100000]float64{}
-		fname   string          = ""
-		persist bool            = true
-		debug   bool            = false
+		numbers = [100000]float64{}
+		lengths = [100000]float64{}
+		fname   = ""
+		persist = true
+		debug   = false
 	)
 
 	for i := 1; i <= 100000; i++ {
