@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang-exercises/challenge01/stage1"
+	"golang-exercises/challenge01"
 	"golang-exercises/lab01"
 	"golang-exercises/lab03"
 )
@@ -14,63 +14,12 @@ func main() {
 
 	switch lab {
 	case 1:
-		lab01_exercises()
+		lab01.Lab01()
 	case 3:
-		lab03_exercises()
+		lab03.Lab03()
 	case 100:
-		challenge1()
+		challenge01.Challenge01()
 	default:
 		fmt.Println("You have chosen wrong lab!")
-	}
-}
-
-func challenge1() {
-	fmt.Println("Choose stage (1-8): ")
-	var st int
-	fmt.Scanf("%d", &st)
-
-	switch st {
-	case 1:
-		stage1.Stage1()
-	default:
-		fmt.Println("You have chosen wrong stage!")
-	}
-}
-
-func lab01_exercises() {
-	fmt.Println("Choose exercises from lab01 (1-4): ")
-	var ex int
-	fmt.Scanf("%d", &ex)
-
-	switch ex {
-	case 1:
-		lab01.Zad01()
-	case 2:
-		lab01.Zad02()
-	case 3:
-		lab01.Zad03()
-	case 4:
-		lab01.Zad04()
-	default:
-		fmt.Println("You have chosen wrong exercise!")
-	}
-}
-
-func lab03_exercises() {
-	fmt.Println("Choose exercises from lab03 (1-3): ")
-	var ex int
-	fmt.Scanf("%d", &ex)
-
-	switch ex {
-	case 1:
-		lab03.Zad01()
-	case 2:
-		lab03.Zad02()
-	case 3:
-		lab03.Zad03()
-	case 4:
-		lab03.Zad04()
-	default:
-		fmt.Println("You have chosen wrong exercise!")
 	}
 }
