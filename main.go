@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
+	"golang-exercises/challenge01/stage1"
 	"golang-exercises/lab01"
 	"golang-exercises/lab03"
 )
 
 func main() {
-	fmt.Println("Choose lab (1-3): ")
+	fmt.Println("Choose lab (1-3) or challenge (100-101): ")
 	var lab int
 	fmt.Scanf("%d", &lab)
 
@@ -16,8 +17,23 @@ func main() {
 		lab01_exercises()
 	case 3:
 		lab03_exercises()
+	case 100:
+		challenge1()
 	default:
 		fmt.Println("You have chosen wrong lab!")
+	}
+}
+
+func challenge1() {
+	fmt.Println("Choose stage (1-8): ")
+	var st int
+	fmt.Scanf("%d", &st)
+
+	switch st {
+	case 1:
+		stage1.Stage1()
+	default:
+		fmt.Println("You have chosen wrong stage!")
 	}
 }
 
