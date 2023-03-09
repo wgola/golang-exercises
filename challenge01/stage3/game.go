@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-func Game() bool {
+func game() bool {
 	randomNumber := rand.Intn(100) + 1
 	fmt.Println("Enter a number (1-100) (or 0 to end program): ")
 

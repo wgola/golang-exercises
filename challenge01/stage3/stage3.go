@@ -8,7 +8,7 @@ func Stage3() {
 	fmt.Println("Hello! Now you will guess a number which I have randomly picked!")
 
 	for {
-		ifStop := Game()
+		ifStop := game()
 
 		if ifStop {
 			break
