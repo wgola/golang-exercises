@@ -12,6 +12,8 @@ func Lab04() {
 		zad01()
 	case 2:
 		zad02()
+	case 3:
+		zad03()
 	default:
 		fmt.Println("You have chosen wrong exercise!")
 	}
