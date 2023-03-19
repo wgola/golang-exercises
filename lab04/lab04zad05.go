@@ -31,11 +31,11 @@ func multiplyMatrix(matrix1, matrix2 [][]int) (multiplied [][]int, err error) {
 		return
 	}
 
-	for i := 0; i < len(matrix1[0]); i++ {
+	for i := 0; i < len(matrix1); i++ {
 		tmpRow := []int{}
-		for j := 0; j < len(matrix2); j++ {
+		for j := 0; j < len(matrix2[0]); j++ {
 			tmpSum := 0
-			for k := 0; k < len(matrix2[0]); k++ {
+			for k := 0; k < len(matrix1); k++ {
 				tmpSum += matrix1[i][k] * matrix2[k][j]
 			}
 			tmpRow = append(tmpRow, tmpSum)
