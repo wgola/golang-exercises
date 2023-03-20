@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"golang-exercises/challenge01"
+	"golang-exercises/challenge02"
 	"golang-exercises/lab01"
 	"golang-exercises/lab03"
 	"golang-exercises/lab04"
@@ -22,6 +23,8 @@ func main() {
 		lab04.Lab04()
 	case 100:
 		challenge01.Challenge01()
+	case 101:
+		challenge02.Challenge02()
 	default:
 		fmt.Println("You have chosen wrong lab!")
 	}
