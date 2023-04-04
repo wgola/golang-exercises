@@ -7,10 +7,11 @@ import (
 	"golang-exercises/lab01"
 	"golang-exercises/lab03"
 	"golang-exercises/lab04"
+	"golang-exercises/lab06"
 )
 
 func main() {
-	fmt.Println("Choose lab (1-4) or challenge (100-101): ")
+	fmt.Println("Choose lab (1-6) or challenge (100-101): ")
 	var lab int
 	fmt.Scanf("%d", &lab)
 
@@ -21,6 +22,8 @@ func main() {
 		lab03.Lab03()
 	case 4:
 		lab04.Lab04()
+	case 6:
+		lab06.Lab06()
 	case 100:
 		challenge01.Challenge01()
 	case 101:
