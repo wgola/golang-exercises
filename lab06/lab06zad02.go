@@ -19,7 +19,7 @@ func z() {
 		}
 		return
 	}(&T{a, b, c}); !s {
-		fmt.Print("No answer\n")
+		fmt.Print("X\n")
 	} else {
 		fmt.Printf("R1=%v\nR2=%v\n", r.a, r.b)
 	}
