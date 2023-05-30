@@ -9,7 +9,7 @@ import (
 	"golang-exercises/lab04"
 	"golang-exercises/lab06"
 	"golang-exercises/lab07"
-	"golang-exercises/las"
+	"golang-exercises/lab08"
 )
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 	case 7:
 		lab07.Lab07zad01()
 	case 8:
-		las.LasMain()
+		lab08.LasMain()
 	case 100:
 		challenge01.Challenge01()
 	case 101:

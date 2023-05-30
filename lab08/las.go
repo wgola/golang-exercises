@@ -1,4 +1,4 @@
-package las
+package lab08
 
 import (
 	"fmt"
@@ -48,7 +48,9 @@ func (f *Forest) RandomizeThunderStrike() {
 	y := rand.Intn(len(f.field))
 	x := rand.Intn(len(f.field[0]))
 
-	f.field[y][x] = 2
+	if f.field[y][x] == 1 {
+		f.field[y][x] = 2
+	}
 }
 
 func (f *Forest) SimulateTurn() {
