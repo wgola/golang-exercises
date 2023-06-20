@@ -1,7 +1,5 @@
 github.com/sbinet/go-gnuplot v0.0.0-20130514120836-9167d8eb1ac4 h1:DjPYuV8FWDg57bkdJ2DQUB6PMQJUapXdJ1uCvPC7XT0=
 github.com/sbinet/go-gnuplot v0.0.0-20130514120836-9167d8eb1ac4/go.mod h1:cBjaN6xLFdcYFeCkvNXnUCPPeHA23BR6Yg6liSwsLjE=
-github.com/veandco/go-sdl2 v0.4.34 h1:dqbUhV/SSJ35grdYTLv3iVxtO1NzNmgzMV//hyCyypY=
-github.com/veandco/go-sdl2 v0.4.34/go.mod h1:OROqMhHD43nT4/i9crJukyVecjPNYYuCofep6SNiAjY=
 golang.org/x/sys v0.6.0 h1:MVltZSvRTcU2ljQOhs94SXPftV6DCNnZViHeQps87pQ=
 golang.org/x/sys v0.6.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.6.0 h1:clScbb1cHjoCkyRbWwBEUZ5H/tIFu5TAXIqaZD0Gcjw=
